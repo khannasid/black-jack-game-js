@@ -1,0 +1,76 @@
+body{
+  background: darkgreen;
+  text-align: center;
+font-family: 'trebuchet MS', 'georgia';
+}
+h1{
+  color: goldenrod;
+}
+#message-el{
+font-weight: bold;
+font-size: 30px;
+color: white;
+font-size: italic;
+}
+#player-el{
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30px;
+  background-color: black;
+  color:#016f32;
+  font-size: italic;
+  border-radius: 4px;
+  padding: 5px;
+  
+}
+h3{color: white;
+}
+/* button{
+  color: #016f32
+  width: 170px;
+  padding: 15px 15px 15px 15px;
+  background: goldenrod;
+  border: none;
+  height: 40px;
+
+} */
+.button {
+  border-radius: 4px;
+  background-color: goldenrod;
+  border: none;
+  text-transform: uppercase;
+  color: #o16f32;
+  text-align: center;
+  font-size: 28px;
+  padding: 5px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 15px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
